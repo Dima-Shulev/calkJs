@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор</title>
+    <script src="Script.js"></script>
+    <script src="Calk.js"></script>
+    <script>
+        window.onload = function(){
+            let script = new Script();
+            script.init();
+        }
+    </script>
+
+</head>
+<body>
+<div class="cont">
+    <div class="calk__grids">
+        <input type="text" name="input" class="history form" disabled value="0">
+        <input type="text" name="input" class="display form" disabled value="0">
+        <button type="button" class="cmd calk__but calk__but__clear">C</button>
+        <button type="button" class="cmd calk__but calk__but__del">del</button>
+        <button type="button" class="char calk__but calk__but__color">+</button>
+        <button type="button" class="char calk__but calk__but__color">-</button>
+        <button type="button" class="char calk__but calk__but__color">*</button>
+        <button type="button" class="char calk__but calk__but__color">/</button>
+        <button type="button" class="number calk__but">9</button>
+        <button type="button" class="number calk__but">8</button>
+        <button type="button" class="number calk__but">7</button>
+        <button type="button" class="cmd calk__but calk__but__color">+/-</button>
+        <button type="button" class="number calk__but">6</button>
+        <button type="button" class="number calk__but">5</button>
+        <button type="button" class="number calk__but">4</button>
+        <button type="button" class="cmd calk__but calk__but__color">%</button>
+        <button type="button" class="number calk__but">3</button>
+        <button type="button" class="number calk__but">2</button>
+        <button type="button" class="number calk__but">1</button>
+        <button type="button" class="char calk__but rez" id="enter">=</button>
+        <button type="button" class="number calk__but calk__but__zero">0</button>
+        <button type="button" class="number calk__but">.</button>
+    </div>
+</div>
+</body>
+</html>
