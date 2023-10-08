@@ -18,14 +18,10 @@ class Script{
         this.calk = new Calk();
     }
 
-
-
     writeToDisplay(){
        this.display.value = (this.calk.item && this.calk.item.val.length > 0) ? this.calk.item.val : this.calk.first.val;
        this.history.value = (this.calk.first) ? this.calk.first.val : "";
        if(this.calk.char)this.history.value += `${this.calk.char} ${this.calk.second.val}`;
-
-
        if(this.display.value.length === 0)this.display.value = 0;
        if(this.history.value.length === 0)this.history.value = 0;
     }

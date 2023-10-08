@@ -55,7 +55,6 @@ class Calk{
             .then(result => alert("Ваш результат: " + result));
     }*/
 
-
     setNumber(val){
         this.item = (!this.char) ? this.first : this.second;
 
@@ -121,14 +120,10 @@ class Calk{
             if (first === 0 || second === 0) return false;
             first = eval(`first ${this.char} second`)
             this.first.val = first.toString();
-
             /*this.ajax(this.first.val);*/
-
-
             if(this.item.val.indexOf(".") !== -1)this.item.point = false;
             this.second.val = "";
             this.char = undefined;
-
         }
     }
 }
